@@ -47,8 +47,8 @@ function Wagon(capacity){
     // properties
     this.day = 1,
     this.capacity = capacity,
-    this.food = 500,
-    this.ammo = 500,
+    this.food = 100,
+    this.ammo = 40,
     this.travelers = [];
 
     // functions
