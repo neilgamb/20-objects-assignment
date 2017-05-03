@@ -292,7 +292,9 @@ HeavyWagon.prototype = new Wagon();
 
                 }  
 
-                this.travelers[0].hunt();  // NEEDS TO BE RANDOM   
+                // this.travelers[(Math.)].hunt();  // NEEDS TO BE RANDOM   
+
+                this.travelers[Math.floor(Math.random() * this.travelers.length)].hunt();
     }
 
 // Run / play function
