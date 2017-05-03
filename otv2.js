@@ -302,9 +302,9 @@ function play() {
     wagon1.next();
   }
 
-//   for (; wagon2.ready() !== 0;) {
-//     wagon2.next();
-//   }
+  for (; wagon2.ready() !== 0;) {
+    wagon2.next();
+  }
 }
 
 
@@ -342,8 +342,11 @@ wagon2.join(will);
 
 // Run Game
 play();
-console.log(wagon1.day);
-console.log(wagon1.miles);
-
-console.log(wagon2.day);
-console.log(wagon2.miles);
+console.log('')
+console.log('=========================== RESULTS ============================')
+console.log('')
+console.log('--------------------------- WAGON 1 ----------------------------')
+console.log("Everyone perished on day " + wagon1.day + " of Wagon 1's voyage.  They made it " + wagon1.miles + " miles before succumbing to the many deadly realities of the infamous Oregon Trail...");
+console.log('')
+console.log('--------------------------- WAGON 2 ----------------------------')
+console.log("Everyone perished on day " + wagon2.day + " of Wagon 2's voyage.  They made it " + wagon2.miles + " miles before succumbing to the many deadly realities of the infamous Oregon Trail...");
