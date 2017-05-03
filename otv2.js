@@ -310,11 +310,11 @@ function play() {
 
 //// GAMEPLAY ///////////////////////////////////////////////////////////////////////////////////////////
 
-console.log('--------------------------------------------------------------')
+// Create Wagons
 let wagon1 = new LightWagon(4);
 let wagon2 = new HeavyWagon(6);
 
-// Wagon 1
+// Load Wagon 1
 let wiley = new Hunter('Wiley');
 let bill = new Doctor('Bill');
 let sarah = new Gunsmith('Sarah');
@@ -325,7 +325,7 @@ wagon1.join(bill);
 wagon1.join(sarah);
 wagon1.join(bonnie);
 
-// Wagon 2
+// Load Wagon 2
 let butch = new Gunsmith('Butch');
 let jack = new Monk('Jack');
 let buck = new Hunter('Buck');
@@ -340,57 +340,10 @@ wagon2.join(jessie);
 wagon2.join(jill);
 wagon2.join(will);
 
-
-// Actions
-// wiley.hunt();
-// wiley.eat();
-
-// bill.hunt();
-// bill.eat();
-
-// sarah.hunt();
-// sarah.eat();
-
-// bonnie.hunt();
-// bonnie.eat();
-
-// butch.hunt();
-// butch.eat();
-
-// jack.hunt();
-// jack.eat();
-
-// buck.hunt();
-// buck.eat();
-
-// jessie.hunt();
-// jessie.eat();
-
-// jill.hunt();
-// jill.eat();
-
-// will.hunt();
-// will.eat();
-
-
-
+// Run Game
 play();
 console.log(wagon1.day);
 console.log(wagon1.miles);
 
 console.log(wagon2.day);
 console.log(wagon2.miles);
-
-
-
-
-// let jessie = new Traveler('Jessie');
-// let jill = new Traveler('Jill');
-
-// wagon1.join(wiley);
-// wagon1.join(buck);
-// wagon1.join(bill);
-// wagon1.join(butch);
-// wagon1.join(jack);
-// wagon1.join(sarah);
-
